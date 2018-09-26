@@ -17,9 +17,10 @@ CREATE TABLE bldgclass(
 	tract2010 text
 )""")
 
+#iterate through the boroughs and load each into the table
 for boro in ("mn","bk","bx","qn","si"):
-		with open(("./building_class/"+ boro + "_bldg.csv"), 'r') as f:
-		next(f)
+		with open(("../processed_data/"+ boro + "_bldg.csv"), 'r') as f:
+		next(f) #skip the column label row
 		cur.copy_from(f, 'bldgclass', sep=',')
 
 conn.commit()
