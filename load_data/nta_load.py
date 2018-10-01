@@ -11,7 +11,7 @@ cur.execute("""
     puma text,
     nta text)""")
 
-with open('../original_data/nta_equiv.csv', 'r') as f:
+with open('../processed_data/nta/nta_equiv.csv', 'r') as f:
     next(f)
     cur.copy_from(f, 'nta', sep=',')
 conn.commit()

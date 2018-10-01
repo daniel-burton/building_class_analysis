@@ -6,9 +6,10 @@
 
 To do:
 * Create script to download the PLUTO files
+* Replace awk scripts ; _ ; with Python/Pandas scripts for consistency
 * Create script to go through all borough PLUTO files with awk, rather than running script on each separately
 * Make awk script for NTAs fix the borough + tract column merge, rather than fixing in excel
 * Look over building typology and condense categories that are functionally equivalent like types of parking garage
 * Create SQL queries to do the work! Creating profiles of NTAs by prevalence of building types
 * Create 1 bash script that does all the steps rather than having to run each manually.
-* Could bash + awk be used to create the database of neighborhoods and their building typologies? Simply counting grouped by NTA.
+* use pandas.pivot() to create the neighborhood summaries. 
