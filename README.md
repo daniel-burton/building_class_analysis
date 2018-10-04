@@ -1,4 +1,4 @@
-#Building Class Analysis for NYC Neighborhoods
+# Building Class Analysis for NYC Neighborhoods
 
 1. Downloads PLUTO file from NYC open data website, currently using 18v1.
 2. Current branch uses awk to select appropriate columns, python to load them into postgres
