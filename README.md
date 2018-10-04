@@ -10,3 +10,9 @@ To do:
 * Make awk script for NTAs fix the borough + tract column merge, rather than fixing in excel
 * Look over building typology and condense categories that are functionally equivalent like types of parking garage
 * create the neighborhood summaries. 
+
+To do this branch:
+* update bash script
+* awk script (or else pandas) needs to create boro_code column in PLUTO files
+* awk script (or else pandas) needs to create borough-ct column in PLUTO files to join NTAs to
+* actual pandas work, so far just jupyter notebook to test out
